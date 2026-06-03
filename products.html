@@ -10,15 +10,38 @@
     <link rel="stylesheet" href="products.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JBranch</title>
     
 </head>
 <body>
     <section id="productos"></section>
         <div id="note${id}" class="card shadow-sm m-3">
                     <div class="card-header">
-                        <h5 class="card-title" id="noteTitle${id}">${title}</h5>
-                        <h6 class="card-subtitle mb-0 text-muted">ID: ${id}</h6>
+                        <h5 class="card-title" id="noteTitle${id}">Vaca</h5>
+                        <h6 class="card-subtitle mb-0 text-muted">ID: 1</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="noteContent${id}">${content}</p>
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Terneros hasta 350 kilos</span></h5>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <button  class="btn btn-outline-primary btn-sm me-2"
+                                    type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Editar Nota">Editar Nota
+                                </button>
+                                <button  class="btn btn-outline-danger btn-sm" type="button"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Nota">Eliminar Nota
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="note${id}" class="card shadow-sm m-3">
+                    <div class="card-header">
+                        <h5 class="card-title" id="noteTitle${id}">Vacubi</h5>
+                        <h6 class="card-subtitle mb-0 text-muted">ID: 2</h6>
                     </div>
                     <div class="card-body">
                         <p class="card-text" id="noteContent${id}">${content}</p>
@@ -40,31 +63,8 @@
                 </div>
                 <div id="note${id}" class="card shadow-sm m-3">
                     <div class="card-header">
-                        <h5 class="card-title" id="noteTitle${id}">${title}</h5>
-                        <h6 class="card-subtitle mb-0 text-muted">ID: ${id}</h6>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="noteContent${id}">${content}</p>
-                        <div class="row">
-                            <div class="col d-flex align-items-center">
-                                <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Novillitos Regulares</span></h5>
-                            </div>
-                            <div class="col d-flex justify-content-end">
-                                <button  class="btn btn-outline-primary btn-sm me-2"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Nota">Editar Nota
-                                </button>
-                                <button  class="btn btn-outline-danger btn-sm" type="button"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Nota">Eliminar Nota
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="note${id}" class="card shadow-sm m-3">
-                    <div class="card-header">
-                        <h5 class="card-title" id="noteTitle${id}">${title}</h5>
-                        <h6 class="card-subtitle mb-0 text-muted">ID: ${id}</h6>
+                        <h5 class="card-title" id="noteTitle${id}">Tina</h5>
+                        <h6 class="card-subtitle mb-0 text-muted">ID: 3</h6>
                     </div>
                     <div class="card-body">
                         <p class="card-text" id="noteContent${id}"><img src="images/225L.webp" alt="Imagen de viatis"></p>
