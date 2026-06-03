@@ -1,3 +1,17 @@
-div > #productos{
-    display: flexbox;
+#productos{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    max-width: 100%;
+    border: 2px solid #000;
+}
+.card-header{
+    background-color: beige;
+}
+.card-body{
+    color: aqua;
+}
+image{
+    max-width: 100%;
 }

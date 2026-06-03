@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="products.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,83 +8,97 @@
     
 </head>
 <body>
-    <section id="productos"></section>
-        <div id="note${id}" class="card shadow-sm m-3">
+    <section id="productos">
+                <div  class="card">
                     <div class="card-header">
                         <h5 class="card-title" id="noteTitle${id}">Vaca</h5>
                         <h6 class="card-subtitle mb-0 text-muted">ID: 1</h6>
                     </div>
                     <div class="card-body">
-                        <p class="card-text" id="noteContent${id}">${content}</p>
+                        <img src="images/218L.webp" alt="Imagen de Vaca">
                         <div class="row">
                             <div class="col d-flex align-items-center">
                                 <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Terneros hasta 350 kilos</span></h5>
                             </div>
-                            <div class="col d-flex justify-content-end">
-                                <button  class="btn btn-outline-primary btn-sm me-2"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Nota">Editar Nota
-                                </button>
-                                <button  class="btn btn-outline-danger btn-sm" type="button"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Nota">Eliminar Nota
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="note${id}" class="card shadow-sm m-3">
+
+
+
+                <div  class="card">
                     <div class="card-header">
                         <h5 class="card-title" id="noteTitle${id}">Vacubi</h5>
                         <h6 class="card-subtitle mb-0 text-muted">ID: 2</h6>
                     </div>
                     <div class="card-body">
-                        <p class="card-text" id="noteContent${id}">${content}</p>
+                        <img src="images/227L.webp" alt="Imagen de Vacubi">
                         <div class="row">
                             <div class="col d-flex align-items-center">
                                 <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Novillitos Regulares</span></h5>
                             </div>
-                            <div class="col d-flex justify-content-end">
-                                <button  class="btn btn-outline-primary btn-sm me-2"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Nota">Editar Nota
-                                </button>
-                                <button  class="btn btn-outline-danger btn-sm" type="button"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Nota">Eliminar Nota
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="note${id}" class="card shadow-sm m-3">
+
+
+
+                <div  class="card">
                     <div class="card-header">
                         <h5 class="card-title" id="noteTitle${id}">Tina</h5>
                         <h6 class="card-subtitle mb-0 text-muted">ID: 3</h6>
                     </div>
                     <div class="card-body">
-                        <p class="card-text" id="noteContent${id}"><img src="images/225L.webp" alt="Imagen de viatis"></p>
+                        <img src="images/225L.webp" alt="Imagen de viatis">
                         <div class="row">
                             <div class="col d-flex align-items-center">
                                 <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Novillos Especiales y Buenos 431/460 kilos</span></h5>
                             </div>
-                            <div class="col d-flex justify-content-end">
-                                <button  class="btn btn-outline-primary btn-sm me-2"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Nota">Editar Nota
-                                </button>
-                                <button  class="btn btn-outline-danger btn-sm" type="button"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar Nota">Eliminar Nota
-                                </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div  class="card">
+                    <div class="card-header">
+                        <h5 class="card-title" id="noteTitle${id}">Frias</h5>
+                        <h6 class="card-subtitle mb-0 text-muted">ID: 4</h6>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/225L.webp" alt="Imagen de viatis">
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Vaquillona Regulares</span></h5>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+                <div  class="card">
+                    <div class="card-header">
+                        <h5 class="card-title" id="noteTitle${id}">Shrek</h5>
+                        <h6 class="card-subtitle mb-0 text-muted">ID: 5</h6>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/225L.webp" alt="Imagen de viatis">
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <h5 class="mb-0"><span class="badge bg-secondary" id="noteCategory${id}">Bovino Vaquillona Especiales y Buenos 431/460 kilos</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
 </body>
 </html>
 categorys:
 Bovino Novillitos Regulares
 Bovino Novillos Especiales y Buenos 431/460 kilos
 Bovino Vaquillona Regulares
-Bovino Novillos Especiales y Buenos 431/460 kilos
+Bovino Vaquillona Especiales y Buenos 431/460 kilos
 Bovino Terneros hasta 350 kilos
 Bovino Novillos Regulares livianos
 Bovino Novillitos Regulares
