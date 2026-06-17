@@ -211,3 +211,61 @@
   height: auto;
   display: block;
 }
+
+/* RESEÑAS — reseñas.html */
+
+.seccion-reseñas {
+  padding: 4rem 2rem;
+  background-color: var(--tierra);
+  background-image: linear-gradient(to bottom right, rgba(100,60,20,0.95), rgba(42,31,18,0.98));
+}
+
+.seccion-reseñas .section-header h2   { color: var(--crema); }
+.seccion-reseñas .section-header h2::after { background: var(--dorado); }
+.seccion-reseñas .subtitulo           { color: rgba(245,236,215,0.72); }
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.comentario {
+  border-radius: 10px;
+  padding: 5%;
+  background: rgba(245,236,215,0.08);
+  border: 1px solid rgba(200,151,42,0.22);
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 0.4rem;
+}
+
+.comentario:hover { background: rgba(245,236,215,0.13); }
+
+.estrellas {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--dorado);
+}
+
+.fecha {
+  font-size: 0.8rem;
+  color: rgba(245,236,215,0.55);
+}
+
+.comentario p {
+  font-size: 0.9rem;
+  color: rgba(245,236,215,0.84);
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.autor {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
