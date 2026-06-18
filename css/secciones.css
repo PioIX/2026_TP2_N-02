@@ -211,3 +211,149 @@
   height: auto;
   display: block;
 }
+
+/* CONTACTO — contacto.html */
+
+.seccion-contacto {
+  padding: 4rem 2rem;
+  background-color: var(--crema);
+}
+
+.contacto-wrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contacto-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.contacto-info h3 {
+  font-family: var(--font-disp);
+  font-size: 1.3rem;
+  color: var(--tierra);
+  margin-bottom: 1.1rem;
+  border-bottom: 2px solid var(--dorado);
+  padding-bottom: 0.45rem;
+}
+
+.contacto-info ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.contacto-info ul li {
+  margin-bottom: 0.55rem;
+  font-size: 0.93rem;
+  color: var(--oscuro);
+}
+
+/* Formulario */
+.form-contacto {
+  flex: 2;
+  min-width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.form-contacto label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--tierra);
+  margin-bottom: -0.4rem;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 0.72rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.93rem;
+  border: 1.5px solid #c8b89a;
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--oscuro);
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  outline: none;
+  border-color: var(--cuero);
+  box-shadow: 0 0 0 3px rgba(160,98,42,0.14);
+}
+
+.btn-submit {
+  background-color: var(--tierra);
+  color: var(--crema);
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding: 0.85rem 2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: var(--cuero);
+  transform: translateY(-2px);
+}
+
+
+/* MEDIA QUERIES — SECCIONES */
+
+/* Tablet */
+@media only screen and (max-width: 900px) {
+  .reseñas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-overlay h2 { font-size: 2.1rem; }
+
+  .destacados-grid {
+    justify-content: center;
+  }
+}
+
+/* Móvil */
+@media only screen and (max-width: 600px) {
+  .hero { min-height: 360px; }
+  .hero-overlay h2 { font-size: 1.65rem; }
+
+  .bienvenida-content { flex-direction: column; }
+
+  .destacados-grid { flex-direction: column; align-items: center; }
+  .destaque { max-width: 100%; width: 100%; }
+
+  .productos-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card { width: 100%; flex: none; }
+
+  .reseñas-grid { grid-template-columns: 1fr; }
+
+  /* Contacto responsivo — requisito de la consigna */
+  .contacto-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-contacto { min-width: unset; width: 100%; }
+
+  .btn-submit { width: 100%; text-align: center; align-self: stretch; }
+}
