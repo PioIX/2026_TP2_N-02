@@ -1,4 +1,4 @@
-# 🐄 El Ombú — Estancia & Ganadería
+# 🐄 JBranch — Estancia & Ganadería
 
 **2026_TP2_G02**
 
