@@ -212,6 +212,119 @@
   display: block;
 }
 
+/* PRODUCTOS — productos.html */
+
+.seccion-productos {
+  padding: 4rem 2rem;
+  background-color: var(--blanco);
+}
+
+.productos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  width: 320px;
+  flex: 0 1 320px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 32px rgba(42,31,18,0.22);
+}
+
+.card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.card:hover .card-img-wrap img { transform: scale(1.05); }
+
+.badge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  background-color: var(--tierra);
+  color: var(--crema);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+}
+
+.badge-vientre { background-color: var(--pasto); }
+.badge-ternero { background-color: var(--cuero); }
+.badge-novillo  { background-color: var(--campo); }
+
+.card-info {
+  padding: 1.1rem 1.3rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-info h3 {
+  font-family: var(--font-disp);
+  font-size: 1.05rem;
+  color: var(--tierra);
+  margin-bottom: 0.45rem;
+}
+
+.card-info p {
+  font-size: 0.87rem;
+  color: var(--gris);
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-size: 0.97rem !important;
+  font-weight: 700;
+  color: var(--campo) !important;
+}
+
+.btn-card {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background-color: var(--tierra);
+  color: var(--crema);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.48rem 1.1rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: background 0.22s;
+}
+
+.btn-card:hover {
+  background-color: var(--dorado);
+  color: var(--oscuro);
+}
 /* RESEÑAS — reseñas.html */
 
 .seccion-reseñas {
