@@ -1,4 +1,114 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — JBranch</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/secciones.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-izq">
+      <span class="logo-emoji">🐄</span>
+      <div class="logo-text">
+        <h1>JBranch</h1>
+        <p class="tagline">Estancia & Ganadería — Desde 1948</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="products.html">Productos</a></li>
+        <li><a href="reseñas.html">Reseñas</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-banner">
+      <div class="banner-overlay">
+        <h2>Contacto</h2>
+        <p>¿Interesado? Escribinos y te respondemos a la brevedad</p>
+      </div>
+    </section>
+
+    <section class="seccion-contacto">
+      <div class="section-header">
+        <h2>Ponete en contacto</h2>
+        <p class="subtitulo">Respondemos consultas de lunes a viernes de 8 a 18 hs</p>
+      </div>
+
+      <div class="contacto-wrapper">
+
+        <div class="contacto-info">
+          <h3>JBranch — Ganadería</h3>
+          <ul>
+            <li>📍 Ruta 6, km 88 — Cañuelas, Buenos Aires</li>
+            <li>📞 +54 9 11 6143-9121</li>
+            <li>📱 +54 9 11 7083-1507</li>
+            <li>✉️ ventas@JBranch.com.ar</li>
+            <li>🕐 Lunes a Viernes: 8:00 — 18:00 hs</li>
+          </ul>
+
+          <div class="mapa-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104584.1457575361!2d-58.69425749999999!3d-35.000332449999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd1f095d493453%3A0x4b87f027f6eb201c!2sCa%C3%B1uelas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1781829772410!5m2!1ses!2sar"
+              width="100%"
+              height="220"
+              style="border:0; border-radius: 8px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación JBranch — Cañuelas">
+            </iframe>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/maqzgvzp" method="POST" class="form-contacto">
+
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan García" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu consulta sobre los animales disponibles..." required></textarea>
+
+          <button type="submit" class="btn-submit">Enviar Consulta</button>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-izq">
+      <span class="logo-emoji">🐄</span>
+      <p><strong>JBranch</strong> — Estancia & Ganadería</p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="products.html">Productos</a></li>
+        <li><a href="reseñas.html">Reseñas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">2026 JBranch. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
